@@ -1,0 +1,127 @@
+└─$ mvt-android check-adb -o ../Desktop
+
+
+        MVT - Mobile Verification Toolkit
+                https://mvt.re
+                Version: 2.7.0
+                Indicators updates checked recently, next automatic check in 12 hours
+
+
+22:03:09 INFO     [mvt.android.cmd_check_adb] Parsing STIX2 indicators file at path                                                                                  
+                  /home/john/.local/share/mvt/indicators/raw.githubusercontent.com_mvt-project_mvt-indicators_main_2023-04-11_quadream_kingspawn.stix2               
+         INFO     [mvt.android.cmd_check_adb] Parsing STIX2 indicators file at path                                                                                  
+                  /home/john/.local/share/mvt/indicators/raw.githubusercontent.com_mvt-project_mvt-indicators_master_candiru_candiru.stix2                           
+         INFO     [mvt.android.cmd_check_adb] Parsing STIX2 indicators file at path                                                                                  
+                  /home/john/.local/share/mvt/indicators/raw.githubusercontent.com_mvt-project_mvt-indicators_main_2023-06_01_operation_triangulation_operation_trian
+                  gulation.stix2                                                                                                                                     
+         INFO     [mvt.android.cmd_check_adb] Parsing STIX2 indicators file at path                                                                                  
+                  /home/john/.local/share/mvt/indicators/raw.githubusercontent.com_AssoEchap_stalkerware-indicators_master_generated_stalkerware.stix2               
+22:03:10 INFO     [mvt.android.cmd_check_adb] Parsing STIX2 indicators file at path                                                                                  
+                  /home/john/.local/share/mvt/indicators/raw.githubusercontent.com_mvt-project_mvt-indicators_main_2023-07-25_wyrmspy_dragonegg_wyrmspy_dragonegg.sti
+                  x2                                                                                                                                                 
+         INFO     [mvt.android.cmd_check_adb] Parsing STIX2 indicators file at path                                                                                  
+                  /home/john/.local/share/mvt/indicators/raw.githubusercontent.com_AmnestyTech_investigations_master_2021-07-18_nso_pegasus.stix2                    
+         INFO     [mvt.android.cmd_check_adb] Parsing STIX2 indicators file at path                                                                                  
+                  /home/john/.local/share/mvt/indicators/raw.githubusercontent.com_mvt-project_mvt-indicators_master_ResidentBat_residentbat.stix2                   
+         INFO     [mvt.android.cmd_check_adb] Parsing STIX2 indicators file at path                                                                                  
+                  /home/john/.local/share/mvt/indicators/raw.githubusercontent.com_AmnestyTech_investigations_master_2023-03-29_android_campaign_malware.stix2       
+         INFO     [mvt.android.cmd_check_adb] Parsing STIX2 indicators file at path                                                                                  
+                  /home/john/.local/share/mvt/indicators/raw.githubusercontent.com_AmnestyTech_investigations_master_2024-05-02_wintego_helios_wintego_helios.stix2  
+         INFO     [mvt.android.cmd_check_adb] Parsing STIX2 indicators file at path                                                                                  
+                  /home/john/.local/share/mvt/indicators/raw.githubusercontent.com_mvt-project_mvt-indicators_main_2022-06-23_rcs_lab_rcs.stix2                      
+         INFO     [mvt.android.cmd_check_adb] Parsing STIX2 indicators file at path                                                                                  
+                  /home/john/.local/share/mvt/indicators/raw.githubusercontent.com_AmnestyTech_investigations_master_2024-12-16_serbia_novispy_novispy.stix2         
+         INFO     [mvt.android.cmd_check_adb] Parsing STIX2 indicators file at path                                                                                  
+                  /home/john/.local/share/mvt/indicators/raw.githubusercontent.com_mvt-project_mvt-indicators_main_intellexa_predator_predator.stix2                 
+         INFO     [mvt.android.cmd_check_adb] Loaded a total of 10933 unique indicators                                                                              
+         WARNING  [mvt] DEPRECATION: The 'check-adb' command is deprecated and may be removed in a future release. Prefer acquiring device data using the AndroidQF  
+                  project (https://github.com/mvt-project/androidqf/) and analyzing that acquisition with MVT.                                                       
+         INFO     [mvt] Checking Android device over debug bridge                                                                                                    
+         INFO     [mvt.android.modules.adb.chrome_history] Running module ChromeHistory...                                                                           
+         ERROR    [mvt.android.modules.adb.chrome_history] This module is optionally available in case the device is already rooted. Do NOT root your own device!    
+         INFO     [mvt.android.modules.adb.chrome_history] The ChromeHistory module produced no detections!                                                          
+         INFO     [mvt.android.modules.adb.sms] Running module SMS...                                                                                                
+         INFO     [mvt.android.modules.adb.sms] No SMS database found. Trying extraction of SMS data using Android backup feature.                                   
+         INFO     [mvt.android.modules.adb.sms] Please check phone and accept Android backup prompt. You may need to set a backup password.                          
+22:03:24 INFO     [mvt.android.modules.adb.sms] Extracted a total of 0 SMS messages                                                                                  
+         INFO     [mvt.android.modules.adb.sms] The SMS module produced no detections!                                                                               
+         INFO     [mvt.android.modules.adb.whatsapp] Running module Whatsapp...                                                                                      
+         ERROR    [mvt.android.modules.adb.whatsapp] This module is optionally available in case the device is already rooted. Do NOT root your own device!          
+         INFO     [mvt.android.modules.adb.whatsapp] The Whatsapp module produced no detections!                                                                     
+         INFO     [mvt.android.modules.adb.processes] Running module Processes...                                                                                    
+22:03:25 INFO     [mvt.android.modules.adb.processes] Extracted records on a total of 633 processes                                                                  
+         WARNING  [mvt.android.modules.adb.processes] Found a known suspicious app with ID "org.findmykids.child" matching indicators from "FindMyKids"              
+         WARNING  [mvt.android.modules.adb.processes] Found a known suspicious app with ID "com.phonetrackerofficial1" matching indicators from                      
+                  "SpyphoneMobileTracker"                                                                                                                            
+         WARNING  [mvt.android.modules.adb.processes] Found a known suspicious app with ID "org.findmykids.app" matching indicators from "FindMyKids"                
+         INFO     [mvt.android.modules.adb.getprop] Running module Getprop...                                                                                        
+         INFO     [mvt.android.modules.adb.getprop] Extracted 707 Android system properties                                                                          
+         INFO     [mvt.android.modules.adb.getprop] persist.sys.timezone: Europe/Helsinki                                                                            
+         INFO     [mvt.android.modules.adb.getprop] ro.boot.serialno: R5CN701XKYT                                                                                    
+         INFO     [mvt.android.modules.adb.getprop] ro.build.version.sdk: 36                                                                                         
+         INFO     [mvt.android.modules.adb.getprop] ro.build.version.security_patch: 2026-01-01                                                                      
+         INFO     [mvt.android.modules.adb.getprop] ro.product.cpu.abi: arm64-v8a                                                                                    
+         INFO     [mvt.android.modules.adb.getprop] ro.product.locale: en-US                                                                                         
+         INFO     [mvt.android.modules.adb.getprop] ro.product.vendor.manufacturer: samsung                                                                          
+         INFO     [mvt.android.modules.adb.getprop] ro.product.vendor.model: SM-G986B                                                                                
+         INFO     [mvt.android.modules.adb.getprop] ro.product.vendor.name: y2sxxx                                                                                   
+         INFO     [mvt.android.modules.adb.getprop] The Getprop module produced no detections!                                                                       
+         INFO     [mvt.android.modules.adb.settings] Running module Settings...                                                                                      
+         WARNING  [mvt.android.modules.adb.settings] Found suspicious "secure" setting "accessibility_enabled = 1" (enabled accessibility services)                  
+         WARNING  [mvt.android.modules.adb.settings] Found suspicious "global" setting "verifier_verify_adb_installs = 0" (disabled Google Play Services apps        
+                  verification)                                                                                                                                      
+         INFO     [mvt.android.modules.adb.settings] The Settings module produced no detections!                                                                     
+         INFO     [mvt.android.modules.adb.selinux_status] Running module SELinuxStatus...                                                                           
+         INFO     [mvt.android.modules.adb.selinux_status] SELinux is being regularly enforced                                                                       
+         INFO     [mvt.android.modules.adb.selinux_status] The SELinuxStatus module does not support checking for indicators                                         
+         INFO     [mvt.android.modules.adb.dumpsys_full] Running module DumpsysFull...                                                                               
+22:03:44 INFO     [mvt.android.modules.adb.dumpsys_full] Full dumpsys output stored at ../Desktop/dumpsys.txt                                                        
+         INFO     [mvt.android.modules.adb.dumpsys_full] The DumpsysFull module does not support checking for indicators                                             
+         INFO     [mvt.android.modules.adb.packages] Running module Packages...                                                                                      
+22:05:44 INFO     [mvt.android.modules.adb.packages] Found non-system package with name "org.findmykids.child" installed by "com.android.vending" on 2026-01-19      
+                  21:39:56                                                                                                                                           
+         INFO     [mvt.android.modules.adb.packages] Found non-system package with name "com.google.android.contactkeys" installed by "com.android.vending" on       
+                  2026-01-19 19:39:22                                                                                                                                
+         INFO     [mvt.android.modules.adb.packages] Found non-system package with name "com.google.android.safetycore" installed by "com.android.vending" on        
+                  2026-01-19 19:39:21                                                                                                                                
+         INFO     [mvt.android.modules.adb.packages] Found non-system package with name "com.app.cocospy" installed by "com.android.packageinstaller" on 2026-01-19  
+                  21:53:28                                                                                                                                           
+         INFO     [mvt.android.modules.adb.packages] Found non-system package with name "com.sec.android.easyMover" installed by "com.android.vending" on 2026-01-19 
+                  19:22:36                                                                                                                                           
+         INFO     [mvt.android.modules.adb.packages] Found non-system package with name "com.eset.parental" installed by "com.android.vending" on 2026-01-19 21:30:23
+         INFO     [mvt.android.modules.adb.packages] Found non-system package with name "com.phonetrackerofficial1" installed by "com.android.vending" on 2026-01-19 
+                  21:25:48                                                                                                                                           
+         INFO     [mvt.android.modules.adb.packages] Found non-system package with name "org.findmykids.app" installed by "com.android.vending" on 2026-01-19        
+                  21:24:52                                                                                                                                           
+         INFO     [mvt.android.modules.adb.packages] Found non-system package with name "com.google.android.apps.kids.familylink" installed by "com.android.vending" 
+                  on 2026-01-19 21:26:54                                                                                                                             
+         INFO     [mvt.android.modules.adb.packages] Found non-system package with name "com.google.ar.core" installed by "com.android.vending" on 2026-01-19        
+                  19:39:26                                                                                                                                           
+         INFO     [mvt.android.modules.adb.packages] Found non-system package with name "org.cp.copy9" installed by "com.android.packageinstaller" on 2026-01-19     
+                  21:54:50                                                                                                                                           
+         INFO     [mvt.android.modules.adb.packages] Found non-system package with name "com.hidayat.app.spyic" installed by "com.android.packageinstaller" on       
+                  2026-01-19 21:54:18                                                                                                                                
+Looking up 34 files... ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━   0% -:--:--
+         INFO     [mvt.android.modules.adb.packages] Extracted at total of 249 installed package names                                                               
+         WARNING  [mvt.android.modules.adb.packages] Found a known suspicious app with ID "org.findmykids.child" matching indicators from "FindMyKids"               
+         WARNING  [mvt.android.modules.adb.packages] Found a known suspicious app with ID "com.phonetrackerofficial1" matching indicators from                       
+                  "SpyphoneMobileTracker"                                                                                                                            
+         WARNING  [mvt.android.modules.adb.packages] Found a known suspicious app with ID "org.findmykids.app" matching indicators from "FindMyKids"                 
+         INFO     [mvt.android.modules.adb.logcat] Running module Logcat...                                                                                          
+22:05:45 INFO     [mvt.android.modules.adb.logcat] Current logcat logs stored at ../Desktop/logcat.txt                                                               
+         INFO     [mvt.android.modules.adb.logcat] Logcat logs prior to last reboot stored at ../Desktop/logcat_last.txt                                             
+         INFO     [mvt.android.modules.adb.logcat] The Logcat module does not support checking for indicators                                                        
+         INFO     [mvt.android.modules.adb.root_binaries] Running module RootBinaries...                                                                             
+         INFO     [mvt.android.modules.adb.root_binaries] The RootBinaries module produced no detections!                                                            
+         INFO     [mvt.android.modules.adb.files] Running module Files...                                                                                            
+22:05:46 INFO     [mvt.android.modules.adb.files] Found 37 files in primary Android tmp and media folders                                                            
+         INFO     [mvt.android.modules.adb.files] Processing full file listing. This may take a while...                                                             
+22:05:57 INFO     [mvt.android.modules.adb.files] Found 258751 total files                                                                                           
+22:06:01 INFO     [mvt.android.modules.adb.files] The Files module produced no detections!                                                                           
+22:06:04 INFO     [mvt.android.cmd_check_adb] Please disable Developer Options and ADB (Android Debug Bridge) on the device once finished with the acquisition. ADB  
+                  is a powerful tool which can allow unauthorized access to the device.                                                                              
+         WARNING   NOTE: Detected indicators of compromise. Only expert review can confirm if the detected indicators are signs of an attack.                        
+                                                                                                                                                                     
+                  Please seek reputable expert help if you have serious concerns about a possible spyware attack. Such support is available to human rights defenders
+                  and civil society through Amnesty International's Security Lab at https://securitylab.amnesty.org/get-help/?c=mvt                                  
+         WARNING  [mvt] The analysis of the Android device produced 6 detections!  
